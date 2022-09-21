@@ -42,6 +42,10 @@ public class TanqueCombustivel {
         }
     }
 
+    public void setTipoCombustivel(TipoCombustivel tipoCombustivel){
+        this.tipoCombustivel = tipoCombustivel;
+    }
+
     public boolean gasta(int quantidade) {
         if (getCombustivelDisponivel() - quantidade < 0) {
             return false;
